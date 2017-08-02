@@ -1,0 +1,16 @@
+body {box-sizing: border-box;}
+.fluidSize {width:90%;max-width:1200px;margin:0 auto;}
+
+.dataRow:nth-child(even) {background: #aaa}
+.dataRow:nth-child(odd) {background: #ddd}
+
+.dataRow > td:not(.groupHeader):nth-of-type(1) {font-weight: bold;text-align:right;padding-right:7px;}
+.dataRow > td:not(.groupHeader):nth-of-type(2) {padding-left:7px;}
+
+.groupHeader {font-size:150%;background-color:#fff;padding-top:1em;position:relative;}
+
+#toc {position:relative;border:1px solid #aaa; background:#ddd; min-height:25px;padding:5px;margin:5px auto;text-align:center;}
+#tocTitle {font-size:120%;font-weight:bold;}
+.navToTop {position:absolute;right:0;bottom:0;font-size:70%;}
+.groupToggle {margin-right:5px; font-size:90%;}
+.totalControl {position:absolute;right:0;top:0;bottom:0;background:#aaaaaa;padding:5px 10px 0 10px;}
