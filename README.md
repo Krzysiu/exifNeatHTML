@@ -17,12 +17,29 @@ Features
 * Logging of errors with some trickish-brainfuckish Windows Batch functions
 * It's designed both for simple changing look and behavior, but mostly it's for novices.
 
+**Preview of the initial version on Firefox with one of the sections opened**
+![Preview of the result of the script](https://raw.githubusercontent.com/Krzysiu/exifNeatHTML/master/preview.png)
+
+
 Usage
 =====
 0. Get Exiftool binary for Windows (shame if you don't have it already!), rename it to exiftool.exe and put it into the system path or into directory where you'd gonna download exifNeatHTML
 1. Just run the exifNeatHTML.bat file with the image file name as parameter - in other words you can use it from console, but you can also drag image and drop onto bat file or put shortcut into _Send to_ Windows menu (https://www.howtogeek.com/howto/windows-vista/customize-the-windows-vista-send-to-menu/)
 2. After some processing (about an hour with 386 PC or half a second with modern one) it will put all needed files into temporary directory and display HTML in your default browser. To share it, just look at adress bar and you'd know where it's located.
 3. If something would go wrong, there will be exifNeatHTML.log file in the directory of the script.
+
+Files
+=====
+1. exifNeatHTML.bat - main script, and then three files which are copied to the result directory:
+2. exifInfo.js - script that makes DHTML (who still remembers this abbreviation?) from HTML
+3. exifInfo.css - hmm, CSS? Yeah.
+4. exifInfo.jQuery.js - minimized jQuery 3.x, so you can use generated files offline
+
+To do
+=====
+* Automatically download Exiftool
+* Auto-"installer" for send-to menu
+* Ability to create a whole bunch of HTML files, e.g. for whole directory
 
 Thanks
 ======
